@@ -102,8 +102,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
     testRunner.Then("the page \"Newsletters\" is opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 11
-    testRunner.When("IChooseARandomNewsletterSubscriptionPlan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+    testRunner.When("I Choose A Random Newsletter Subscription Plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 13
+    testRunner.And("an email form has appeared at the bottom of the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
+    testRunner.And("I enter my email and click the \"Submit\" button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

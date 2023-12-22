@@ -8,22 +8,18 @@ using NUnit.Framework;
 namespace EuronewsBDD.StepDefinitions
 {
     [Binding]
-    public sealed class MainPageSteps
+    public sealed class MainPageSteps : BaseSteps
     {
         private readonly PrivacyPolicy privacyPolicy;
         private readonly MainPage mainPage;
         private readonly NewsletterPage newsletterPage;
-        private readonly Browser browser;
-        private readonly ISettingsFile configData;
-        private string Url;
+        private readonly string Url;
 
         public MainPageSteps()
         {
             mainPage = new MainPage();
             privacyPolicy = new PrivacyPolicy();
             newsletterPage = new NewsletterPage();
-            browser = AqualityServices.Browser;
-            configData = SettingsFilesUtils.GetConfigData();
 
             Url = configData.GetValue<string>("url");
         }

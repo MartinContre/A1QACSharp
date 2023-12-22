@@ -12,3 +12,5 @@ Scenario: Euronwes Gmail API
     When I Choose A Random Newsletter Subscription Plan
     And an email form has appeared at the bottom of the page
 
+    And I enter my email and click the "Submit" button
+
