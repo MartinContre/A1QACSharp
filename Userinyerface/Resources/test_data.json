@@ -1,0 +1,18 @@
+{
+  "email_length": 10,
+  "emails_domains": [
+    "gmail",
+    "yahoo",
+    "outlook",
+    "icloud",
+    "aol",
+    "zoho",
+    "proton",
+    "gmx"
+  ],
+  "delay_time" : 1000,
+  "number_random_select_checkboxes": 3,
+  "password_length": 10,
+  "path_upload_image": "\\Resources\\image.png",
+  "start_timer": "00:00:00"
+}
