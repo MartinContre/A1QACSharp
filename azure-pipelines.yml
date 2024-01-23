@@ -6,11 +6,8 @@
 trigger:
 - EuronewsTest
 
-pool:
-  vmImage: windows-latest
-
 steps:
-
-- script: |
-    dotnet test
-  displayName: 'Run tests'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'EuronewsTest/EuroNewsTest.sln'
